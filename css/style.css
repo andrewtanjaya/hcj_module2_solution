@@ -5,11 +5,19 @@ body{
     align-items: center;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+h1{
+    font-size: 0.75em;
 }
 
 .big-container{
+    font-size: 0.25em;
     display: flex;
+    width: 100vw;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .container{
     border: 1px solid black;
@@ -29,7 +37,42 @@ body{
 }
 
 .container :nth-child(2){
+    width: 95%;
     margin: 15px;
     margin-top: 70px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .big-container{
+        width: 70%;
+    }
+    .big-container :nth-child(3){
+        margin-top: 40px;
+        width: 88%;
+    }
+    .big-container :nth-child(2){
+        width: 40%;
+    }
+    .big-container :nth-child(1){
+        width: 40%;
+    }
+    .container :nth-child(2){
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .big-container{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* .container :nth-child(2){
+        width: 90%;
+    } */
 }
 
