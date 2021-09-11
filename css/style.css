@@ -35,6 +35,13 @@ h1{
     right: 0;
     top: 0;
 }
+.tag2{
+    background-color: red;
+}
+
+.tag3{
+    background-color: yellow;
+}
 
 .container :nth-child(2){
     width: 95%;
